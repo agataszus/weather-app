@@ -25,3 +25,36 @@ body {
   min-height: 100vh;
 }
 
+.main-container {
+  display: flex;
+  height: 720px;
+  width: 1340px;
+  /* align-items: center; */
+  justify-content: center;
+
+  background-image: linear-gradient(to top left, #360283, #2d1a57);
+  border-radius: 24px;
+  box-shadow: 0px 12px 36px rgb(0, 0, 0, 0.2);
+}
+
+.location-container {
+  display: flex;
+  margin-top: 48px;
+  height: 80px;
+  width: 480px;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  width: 36px;
+}
+
+.pin-icon {
+  height: 24px;
+  width: 24px;
+}
