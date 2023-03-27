@@ -31,21 +31,27 @@ body {
 
 .main-container {
   display: flex;
+  flex-direction: column;
+  gap: 24px;
   height: 720px;
   width: 1340px;
-  /* align-items: center; */
-  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
 
-  background-image: linear-gradient(to top left, #360283, #2d1a57);
+  background-image: linear-gradient(
+    to top left,
+    rgb(54, 2, 131, 0.8),
+    rgb(45, 26, 87, 0.8)
+  );
   border-radius: 24px;
   box-shadow: 0px 12px 36px rgb(0, 0, 0, 0.2);
 }
 
 .location-container {
   display: flex;
-  margin-top: 48px;
   height: 80px;
   width: 480px;
+  margin-top: 96px;
   justify-content: center;
   align-items: center;
 }

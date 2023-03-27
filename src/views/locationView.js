@@ -1,6 +1,6 @@
 import { selectCurrentWeatherContainer } from "./selectors/selectCurrentWeatherContainer";
 
-class locationView {
+class LocationView {
   _getParentElement() {
     return selectCurrentWeatherContainer();
   }
@@ -24,7 +24,7 @@ class locationView {
     return locationContainer;
   }
 
-  _renderLocationContainer(city) {
+  renderLocationContainer(city) {
     const container = this._createLocationContainer(city);
     this._getParentElement().insertAdjacentElement("afterbegin", container);
   }
@@ -36,4 +36,4 @@ class locationView {
   }
 }
 
-export default new locationView();
+export default new LocationView();
