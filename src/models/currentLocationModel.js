@@ -1,6 +1,7 @@
 export const state = {
   coords: {},
   city: "",
+  weather: {},
 };
 
 const getCurrentLocation = function () {
