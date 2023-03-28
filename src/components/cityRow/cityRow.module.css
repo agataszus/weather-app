@@ -1,0 +1,8 @@
+.location {
+  display: flex;
+  height: 80px;
+  width: 480px;
+  margin-top: 96px;
+  justify-content: center;
+  align-items: center;
+}

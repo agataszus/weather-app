@@ -1,0 +1,14 @@
+.weatherInformationContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0 18px 18px;
+  width: 280px;
+}
+
+.currentTemperature {
+  font-size: 96px;
+  font-weight: 400;
+  letter-spacing: -2px;
+  margin-bottom: 12px;
+  align-self: center;
+}

@@ -1,0 +1,12 @@
+.iconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  width: 36px;
+}
+
+.iconSmall {
+  height: 24px;
+  width: 24px;
+}

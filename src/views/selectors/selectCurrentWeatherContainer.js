@@ -1,2 +1,2 @@
 export const selectCurrentWeatherContainer = () =>
-  document.querySelector(".main-container");
+  document.querySelector(".current-weather-container");
