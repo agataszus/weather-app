@@ -1,0 +1,23 @@
+.errorIcon {
+  stroke: red;
+  height: 48px;
+  width: auto;
+}
+
+.errorMessage {
+  color: black;
+}
+
+.errorContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  background-color: rgba(255, 255, 255, 0.87);
+  height: 240px;
+  width: 580px;
+  border-radius: 24px;
+  box-shadow: 12px 18px 36px rgb(0, 0, 0, 0.4);
+  padding: 0 48px;
+  margin-top: 36px;
+}
