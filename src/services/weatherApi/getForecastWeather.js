@@ -15,5 +15,6 @@ export const getForecastWeather = async (city) => {
       weatherStatus: mapCodeToWeatherStatus(+day.day.condition.code),
     };
   });
+  console.log(forecast);
   return { forecast, city: data.location.name };
 };

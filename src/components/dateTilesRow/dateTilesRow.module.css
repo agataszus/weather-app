@@ -1,0 +1,39 @@
+.dateTilesRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 720px;
+}
+
+.tileActive {
+  background-image: linear-gradient(
+    to top,
+    rgba(72, 61, 109, 0.5),
+    rgba(231, 231, 233, 0.5)
+  );
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 3px 0px rgba(52, 44, 78, 0.4);
+}
+
+.tileActive p {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.tileActive::after {
+  display: block;
+  position: absolute;
+  content: "";
+  z-index: 1;
+  bottom: 0%;
+  width: 100%;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(72, 61, 109, 0.5) 0%,
+    rgba(231, 231, 233, 0.3) 50%,
+    rgba(72, 61, 109, 0.5) 100%
+  );
+}

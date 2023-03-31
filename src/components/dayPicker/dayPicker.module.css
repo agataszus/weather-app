@@ -1,0 +1,31 @@
+.dayPicker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+}
+
+.buttonPicker {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  width: 136px;
+  background: none;
+  color: inherit;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  border: none;
+  font-size: 14px;
+  letter-spacing: 1px;
+  opacity: 90%;
+}
+
+.buttonLeft {
+  justify-content: flex-end;
+}
+
+.buttonRight {
+  justify-content: flex-start;
+}
