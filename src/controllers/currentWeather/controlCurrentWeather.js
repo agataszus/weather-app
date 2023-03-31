@@ -1,16 +1,15 @@
-import { getError } from "../../models/weatherModel";
-import ErrorView from "../../views/errorView";
 import { initCurrentWeather } from "./initCurrentWeather";
-import { renderCity } from "./renderCity";
+import { renderCity } from "../topBar/renderCity";
 import { renderCurrentWeather } from "./renderCurrentWeather";
-import { renderGoToForecast } from "./renderGoToForecast";
+import { controlError } from "../error/controlError";
 
 export const controlCurrentWeather = async () => {
-  await initCurrentWeather();
-  const error = getError();
-  if (error) return ErrorView.renderError(error);
-
-  renderGoToForecast();
-  renderCity();
-  renderCurrentWeather();
+  try {
+    controlError(false);
+    await initCurrentWeather();
+    renderCity();
+    renderCurrentWeather();
+  } catch (error) {
+    controlError(true, error);
+  }
 };
