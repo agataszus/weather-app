@@ -1,0 +1,29 @@
+.weatherCardsRow {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 900px;
+}
+
+.leftCard {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translate(0, -50%) scale(0.8);
+  filter: blur(4px);
+  opacity: 40%;
+}
+
+.middleCard {
+  z-index: 1;
+}
+
+.rightCard {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translate(0, -50%) scale(0.8);
+  filter: blur(4px);
+  opacity: 40%;
+}
