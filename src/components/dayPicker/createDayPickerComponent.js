@@ -11,6 +11,7 @@ export const createDayPickerComponent = (statusArray, daysArray) => {
   const buttonLeft = document.createElement("button");
   buttonLeft.classList.add(styles.buttonLeft);
   buttonLeft.classList.add(styles.buttonPicker);
+  buttonLeft.setAttribute("id", "button-picker-left");
   buttonLeft.setAttribute("data-isDayPicker", "");
   buttonLeft.setAttribute("data-id", daysArray[3]);
   buttonLeft.setAttribute("type", "button");
@@ -26,6 +27,7 @@ export const createDayPickerComponent = (statusArray, daysArray) => {
   const buttonRight = document.createElement("button");
   buttonRight.classList.add(styles.buttonRight);
   buttonRight.classList.add(styles.buttonPicker);
+  buttonRight.setAttribute("id", "button-picker-right");
   buttonRight.setAttribute("data-isDayPicker", "");
   buttonRight.setAttribute("data-id", daysArray[5]);
   buttonRight.setAttribute("type", "button");
