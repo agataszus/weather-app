@@ -1,5 +1,6 @@
 import { createWeatherIconComponent } from "../weatherIcon/createWeatherIconComponent";
 import styles from "./weatherCard.module.css";
+import lineSrc from "../../assets/line.svg";
 
 export const createWeatherCardComponent = (weather) => {
   const container = document.createElement("div");
@@ -16,7 +17,7 @@ export const createWeatherCardComponent = (weather) => {
 
   const line = document.createElement("img");
   line.classList.add(styles.lineElement);
-  line.setAttribute("src", "../../assets/line.svg");
+  line.setAttribute("src", lineSrc);
   container.insertAdjacentElement("beforeend", line);
 
   const iconImg = createWeatherIconComponent(weather.weatherStatus);
