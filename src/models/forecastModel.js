@@ -4,6 +4,7 @@ const state = {
   lastDay: null,
   isForecastOn: false,
   daysArray: null,
+  statusArray: null,
   firstDayValue: null,
   lastDayValue: null,
 };
@@ -37,6 +38,12 @@ export const setDaysArray = (array) => {
 };
 
 export const getDaysArray = () => state.daysArray;
+
+export const setStatusArray = (array) => {
+  state.statusArray = array;
+};
+
+export const getStatusArray = () => state.statusArray;
 
 export const setFirstDayValue = (value) => {
   state.firstDayValue = value;

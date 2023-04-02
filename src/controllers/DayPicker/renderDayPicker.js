@@ -1,7 +1,7 @@
 import DayPickerView from "../../views/dayPickerView";
-import { controlDaysArray } from "./controlDaysArray";
+import { controlDaysAndStatusArrays } from "./controlDaysAndStatusArrays";
 
 export const renderDayPicker = (day) => {
-  const array = controlDaysArray(day);
-  DayPickerView.render(array);
+  const { statusPickerArray, dayPickerArray } = controlDaysAndStatusArrays(day);
+  DayPickerView.render(statusPickerArray, dayPickerArray);
 };

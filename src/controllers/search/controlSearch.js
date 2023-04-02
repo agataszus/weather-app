@@ -1,9 +1,11 @@
 import { getIsForecastOn } from "../../models/forecastModel";
-import { getSearchInput, setSelectedInput } from "../../models/searchModel";
-import { getError, setCity } from "../../models/weatherModel";
-// import LoaderView from "../../views/loaderView.js";
+import {
+  getSearchInput,
+  setSearchInput,
+  setSelectedInput,
+} from "../../models/searchModel";
+import { setCity } from "../../models/weatherModel";
 import { updateCurrentWeather } from "../currentWeather/updateCurrentWeather";
-import { toggleDayPickerHiddenClass } from "../DayPicker/toggleDayPickerHiddenClass";
 import { controlError } from "../error/controlError";
 import { controlForecastWeather } from "../forecastWeather/controlForecastWeather";
 import { renderCity } from "../topBar/renderCity";
@@ -14,10 +16,9 @@ export const controlSearch = async () => {
     const searchInput = getSearchInput();
     if (!searchInput) throw new Error("Input is required!");
     setSelectedInput(searchInput);
+    setSearchInput("");
 
-    if (getError()) toggleDayPickerHiddenClass();
     controlError(false);
-    // LoaderView.renderLoader();
 
     if (isForecast) await controlForecastWeather(searchInput);
     else await updateCurrentWeather(searchInput);

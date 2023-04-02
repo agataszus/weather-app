@@ -16,6 +16,7 @@ export const getForecastWeather = async (city) => {
     };
   });
   const daysArray = forecast.map((day) => day.date.slice(8, 10));
+  const statusArray = forecast.map((day) => day.weatherStatus);
 
-  return { forecast, city: data.location.name, daysArray };
+  return { forecast, city: data.location.name, daysArray, statusArray };
 };

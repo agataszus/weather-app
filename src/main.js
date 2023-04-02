@@ -10,6 +10,8 @@ import { controlToggleForecast } from "./controllers/ToggleForecast/controlToggl
 import { renderToggleForecast } from "./controllers/ToggleForecast/renderToggleForecast";
 import DayPickerView from "./views/dayPickerView";
 import { controlDayPicker } from "./controllers/DayPicker/controlDayPicker";
+import GlobalView from "./views/globalView";
+import { controlKeyDownListener } from "./controllers/DayPicker/controlKeyDownListener";
 
 const init = async function () {
   controlTopBar();
@@ -19,5 +21,6 @@ const init = async function () {
   SearchView.handleSearch(controlSearch);
   ToggleForecastView.handleGoToForecast(controlToggleForecast);
   DayPickerView.handleDayPicker(controlDayPicker);
+  GlobalView.handleKeyDownListener(controlKeyDownListener);
 };
 init();

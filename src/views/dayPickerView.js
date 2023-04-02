@@ -10,13 +10,17 @@ class DayPickerView {
     this._getParentElement().innerHTML = "";
   }
 
-  toggleHidden() {
-    this._getParentElement().classList.toggle("hidden");
+  hide() {
+    this._getParentElement().classList.add("hidden");
   }
 
-  render(array) {
+  show() {
+    this._getParentElement().classList.remove("hidden");
+  }
+
+  render(statusArray, daysArray) {
     this._clear();
-    const container = createDayPickerComponent(array);
+    const container = createDayPickerComponent(statusArray, daysArray);
     this._getParentElement().insertAdjacentElement("afterbegin", container);
   }
 
