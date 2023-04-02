@@ -8,7 +8,11 @@ export const createInformationComponent = (weather) => {
   // temperature
   const temperature = document.createElement("h2");
   temperature.classList.add(styles.currentTemperature);
-  temperature.textContent = `${weather.temperature}°`;
+  temperature.textContent = `${weather.temperature}`;
+  const span = document.createElement("span");
+  span.classList.add(styles.degreeSymbol);
+  span.textContent = "°";
+  temperature.insertAdjacentElement("beforeend", span);
   container.insertAdjacentElement("afterbegin", temperature);
 
   const attributesContainer = createTextRowListComponent([

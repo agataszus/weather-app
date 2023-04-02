@@ -9,4 +9,4 @@ export const getCurrentWeatherUrl = (lat, lng) =>
 export const getSearchWeatherUrl = (input) =>
   `${getBaseUrl()}/current.json?key=${API_KEY}&q=${input}`;
 export const getForecastWeatherUrl = (city) =>
-  `${getBaseUrl()}/forecast.json?key=${API_KEY}&q=${city}&days=5`;
+  `${getBaseUrl()}/forecast.json?key=${API_KEY}&q=${city}&days=14`;

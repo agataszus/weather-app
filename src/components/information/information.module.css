@@ -6,9 +6,16 @@
 }
 
 .currentTemperature {
+  display: flex;
+  gap: 4px;
   font-size: 96px;
   font-weight: 400;
   letter-spacing: -2px;
   margin-bottom: 12px;
   align-self: center;
+}
+
+.degreeSymbol {
+  font-size: 36px;
+  margin-top: 16px;
 }

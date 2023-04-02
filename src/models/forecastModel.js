@@ -3,6 +3,9 @@ const state = {
   activeDay: null,
   lastDay: null,
   isForecastOn: false,
+  daysArray: null,
+  firstDayValue: null,
+  lastDayValue: null,
 };
 
 export const setForecast = (forecast) => {
@@ -28,3 +31,21 @@ export const setIsForecastOn = (boolean) => {
 };
 
 export const getIsForecastOn = () => state.isForecastOn;
+
+export const setDaysArray = (array) => {
+  state.daysArray = array;
+};
+
+export const getDaysArray = () => state.daysArray;
+
+export const setFirstDayValue = (value) => {
+  state.firstDayValue = value;
+};
+
+export const getFirstDayValue = () => state.firstDayValue;
+
+export const setLastDayValue = (value) => {
+  state.lastDayValue = value;
+};
+
+export const getLastDayValue = () => state.lastDayValue;

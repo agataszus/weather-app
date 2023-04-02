@@ -5,6 +5,7 @@
   justify-content: center;
   height: 72px;
   width: 72px;
+  cursor: pointer;
 }
 
 .dateText {

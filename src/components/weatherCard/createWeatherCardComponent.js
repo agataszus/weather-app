@@ -14,6 +14,11 @@ export const createWeatherCardComponent = (weather) => {
   temperature.insertAdjacentElement("beforeend", span);
   container.insertAdjacentElement("beforeend", temperature);
 
+  const line = document.createElement("img");
+  line.classList.add(styles.lineElement);
+  line.setAttribute("src", "../../assets/line.svg");
+  container.insertAdjacentElement("beforeend", line);
+
   const iconImg = createWeatherIconComponent(weather.weatherStatus);
   iconImg.classList.add(styles.weatherCardIcon);
   container.insertAdjacentElement("beforeend", iconImg);
