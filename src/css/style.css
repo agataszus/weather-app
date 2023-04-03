@@ -2,7 +2,6 @@
   font-family: Poppins, Inter, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  font-size: 24px;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -22,20 +21,28 @@
   font-family: Poppins, Inter, sans-serif;
 }
 
+html {
+  font-size: 62.5%;
+  /* overflow-x: hidden; */
+}
+
 body {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 320px;
+  font-size: 2.4rem;
   min-height: 100vh;
+  margin: auto;
+  /* min-width: 32rem;
+  min-height: 10rem; */
 }
 
 .main-container {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  height: 780px;
-  width: 1340px;
+  gap: 2.4rem;
+  height: 78rem;
+  width: 134rem;
   align-items: center;
   justify-content: space-between;
 
@@ -53,16 +60,16 @@ body {
   justify-content: space-between;
   align-items: flex-end;
   width: 100%;
-  margin: 64px 0 0;
-  padding: 0 64px;
+  margin: 6.4rem 0 0;
+  padding: 0 6.4rem;
 }
 
 .logo-container {
-  width: 220px;
+  width: 22rem;
 }
 
 .search-container {
-  width: 220px;
+  width: 22rem;
 }
 
 .hidden {
@@ -73,18 +80,18 @@ body {
 .loader {
   display: flex;
   position: relative;
-  width: 80px;
-  height: 320px;
-  margin: 24px 0;
+  width: 8rem;
+  height: 32rem;
+  margin: 2.4rem 0;
 }
 .loader div {
   box-sizing: border-box;
   display: block;
   position: absolute;
-  width: 64px;
-  height: 64px;
-  margin: 128px 8px;
-  border: 8px solid #fff;
+  width: 6.4rem;
+  height: 6.4rem;
+  margin: 12.8rem 0.8rem;
+  border: 0.8rem solid #fff;
   border-radius: 50%;
   animation: loader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
   border-color: #fff transparent transparent transparent;
@@ -104,5 +111,89 @@ body {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+/**********************************/
+/* BELOW 1344px (Small desktops) */
+/**********************************/
+
+@media (max-width: 84em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .main-container {
+    gap: 2.4rem;
+    height: 70rem;
+    width: 120rem;
+  }
+}
+
+/**********************************/
+/* BELOW 940px (Tablets) */
+/**********************************/
+
+@media (max-width: 58em) {
+  .main-container {
+    width: 100%;
+    min-height: 100vh;
+    border-radius: 0;
+  }
+
+  .top-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    padding: 0;
+    column-gap: 9.6rem;
+    row-gap: 7.2rem;
+  }
+
+  .location-container {
+    grid-row: 2/3;
+    grid-column: 1/3;
+    justify-self: center;
+  }
+}
+
+/**********************************/
+/* BELOW 670px (Small tablets) */
+/**********************************/
+
+@media (max-width: 42em) {
+  .top-bar {
+    column-gap: 0;
+  }
+}
+
+/**********************************/
+/* BELOW 544px (Mobile phones) */
+/**********************************/
+
+@media (max-width: 34em) {
+  html {
+    font-size: 50%;
+  }
+
+  .top-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4.8rem;
+    margin-top: 3.6rem;
+  }
+
+  .location-container {
+    order: 1;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-container {
+    overflow: hidden;
   }
 }

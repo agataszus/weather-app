@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 720px;
+  width: 72rem;
 }
 
 .tileActive {
@@ -21,7 +21,7 @@
 }
 
 .tileActive p {
-  font-size: 32px;
+  font-size: 3.2rem;
   font-weight: 700;
 }
 
@@ -39,4 +39,17 @@
     rgba(231, 231, 233, 0.3) 50%,
     rgba(72, 61, 109, 0.5) 100%
   );
+}
+
+/**********************************/
+/* BELOW 1344px (Smaller Desktops) */
+/**********************************/
+
+@media (max-width: 84em) {
+  .dateTilesRow {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 }

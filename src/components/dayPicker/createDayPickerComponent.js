@@ -41,10 +41,13 @@ export const createDayPickerComponent = (statusArray, daysArray) => {
   buttonRight.insertAdjacentElement("beforeend", iconRight);
 
   // date tiles row
+  const tilesContainer = document.createElement("div");
+  tilesContainer.classList.add(styles.tilesRowContainer);
   const tilesRow = createDateTilesRowComponent(statusArray, daysArray);
+  tilesContainer.insertAdjacentElement("beforeend", tilesRow);
 
   container.insertAdjacentElement("beforeend", buttonLeft);
-  container.insertAdjacentElement("beforeend", tilesRow);
+  container.insertAdjacentElement("beforeend", tilesContainer);
   container.insertAdjacentElement("beforeend", buttonRight);
 
   return container;

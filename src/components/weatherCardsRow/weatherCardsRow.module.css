@@ -3,8 +3,8 @@
   position: relative;
   align-items: center;
   justify-content: center;
-  width: 900px;
-  margin: 24px 0;
+  width: 90rem;
+  margin: 2.4rem 0;
 }
 
 .leftCard {
@@ -27,4 +27,40 @@
   transform: translate(0, -50%) scale(0.8);
   filter: blur(4px);
   opacity: 40%;
+}
+
+/**********************************/
+/* BELOW 940px (Tablets) */
+/**********************************/
+
+@media (max-width: 58em) {
+  .weatherCardsRow {
+    width: 64rem;
+  }
+
+  .leftCard {
+    left: 0%;
+  }
+
+  .rightCard {
+    right: 0%;
+  }
+}
+
+/**********************************/
+/* BELOW 670px (Small tablets) */
+/**********************************/
+
+@media (max-width: 42em) {
+  .weatherCardsRow {
+    width: 30rem;
+  }
+
+  .leftCard {
+    left: -50%;
+  }
+
+  .rightCard {
+    right: -50%;
+  }
 }

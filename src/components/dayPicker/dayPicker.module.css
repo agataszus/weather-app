@@ -2,14 +2,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 48px;
+  gap: 4.8rem;
 }
 
 .buttonPicker {
   display: flex;
-  gap: 4px;
+  gap: 0.4rem;
   align-items: center;
-  width: 136px;
+  width: 13.6rem;
   background: none;
   color: inherit;
   padding: 0;
@@ -17,7 +17,7 @@
   cursor: pointer;
   outline: inherit;
   border: none;
-  font-size: 14px;
+  font-size: 1.4rem;
   letter-spacing: 1px;
   opacity: 90%;
 }
@@ -28,4 +28,60 @@
 
 .buttonRight {
   justify-content: flex-start;
+}
+
+/**********************************/
+/* BELOW 1344px (Smaller Desktops) */
+/**********************************/
+
+@media (max-width: 84em) {
+  .tilesRowContainer {
+    display: block;
+    position: relative;
+    width: 52rem;
+    height: 7.2rem;
+    overflow: hidden;
+  }
+}
+
+/**********************************/
+/* BELOW 940px (Tablets) */
+/**********************************/
+
+@media (max-width: 58em) {
+  .tilesRowContainer {
+    width: 37rem;
+  }
+}
+
+/**********************************/
+/* BELOW 670px (Small tablets) */
+/**********************************/
+
+@media (max-width: 42em) {
+  .tilesRowContainer {
+    width: 22rem;
+  }
+
+  .buttonLeft {
+    font-size: 0;
+  }
+
+  .buttonRight {
+    font-size: 0;
+  }
+
+  .buttonPicker {
+    width: 4.8rem;
+  }
+}
+
+/**********************************/
+/* BELOW 544px (Mobile phones) */
+/**********************************/
+
+@media (max-width: 34em) {
+  .dayPicker {
+    gap: 1.2rem;
+  }
 }

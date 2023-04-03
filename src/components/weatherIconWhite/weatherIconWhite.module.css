@@ -1,6 +1,6 @@
 .weatherIcon {
   filter: invert(1);
-  height: 18px;
+  height: 1.8rem;
   width: auto;
-  margin-bottom: 2px;
+  margin-bottom: 0.2rem;
 }

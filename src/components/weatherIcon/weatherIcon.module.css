@@ -1,4 +1,14 @@
 .weatherIcon {
-  height: 168px;
+  height: 16.8rem;
   width: auto;
+}
+
+/**********************************/
+/* BELOW 670px (Small tablets) */
+/**********************************/
+
+@media (max-width: 42em) {
+  .weatherIcon {
+    height: 13.6rem;
+  }
 }

@@ -1,21 +1,42 @@
 .weatherInformationContainer {
   display: flex;
   flex-direction: column;
-  padding: 0 18px 18px;
-  width: 280px;
+  padding: 0 1.8rem 1.8rem;
+  width: 28rem;
 }
 
 .currentTemperature {
   display: flex;
   gap: 4px;
-  font-size: 96px;
+  font-size: 9.6rem;
   font-weight: 400;
   letter-spacing: -2px;
-  margin-bottom: 12px;
+  margin-bottom: 1.2rem;
   align-self: center;
 }
 
 .degreeSymbol {
-  font-size: 36px;
-  margin-top: 16px;
+  font-size: 3.6rem;
+  margin-top: 1.6rem;
+}
+
+/**********************************/
+/* BELOW 940px (Tablets) */
+/**********************************/
+
+@media (max-width: 58em) {
+  .weatherInformationContainer {
+    order: 1;
+  }
+}
+
+/**********************************/
+/* BELOW 670px (Small tablets) */
+/**********************************/
+
+@media (max-width: 42em) {
+  .currentTemperature {
+    font-size: 8.4rem;
+    margin-bottom: 0.8rem;
+  }
 }
