@@ -15,6 +15,14 @@ class ErrorView {
     const container = createErrorComponent(error);
     this._getParentElement().insertAdjacentElement("afterbegin", container);
   }
+
+  addRelative() {
+    this._getParentElement().classList.add("relative");
+  }
+
+  removeRelative() {
+    this._getParentElement().classList.remove("relative");
+  }
 }
 
 export default new ErrorView();

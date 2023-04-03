@@ -72,6 +72,17 @@ body {
   width: 22rem;
 }
 
+.current-weather-container {
+  position: inherit;
+}
+
+.relative {
+  position: relative;
+  height: 24rem;
+  width: 58rem;
+  margin: auto;
+}
+
 .hidden {
   display: none !important;
 }
@@ -195,5 +206,9 @@ body {
 
   .main-container {
     overflow: hidden;
+  }
+
+  .relative {
+    width: 95vw;
   }
 }
