@@ -1,5 +1,5 @@
 export const state = {
-  coords: { latitude: 18.5, longitude: -69.9 },
+  coords: { latitude: 28.587983, longitude: 77.218197 },
   city: "",
   weather: {},
   error: null, // or null

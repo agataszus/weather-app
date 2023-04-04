@@ -12,6 +12,7 @@ export const createDateTileComponent = (weatherStatus, date) => {
   const text = document.createElement("p");
   text.classList.add(styles.dateText);
   text.textContent = date;
+  if (!date) container.style.visibility = "hidden";
   container.insertAdjacentElement("beforeend", text);
 
   return container;

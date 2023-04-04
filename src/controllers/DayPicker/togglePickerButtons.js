@@ -5,13 +5,13 @@ export const togglePickerButtons = () => {
   const buttonRight = document.getElementById("button-picker-right");
   const activeDay = getActiveDay();
   if (activeDay === 0) {
-    buttonLeft.style.opacity = "0";
+    buttonLeft.style.visibility = "hidden";
     return;
   }
   if (activeDay === 13) {
-    buttonRight.style.opacity = "0";
+    buttonRight.style.visibility = "hidden";
     return;
   }
-  buttonLeft.style.opacity = "100%";
-  buttonRight.style.opacity = "100%";
+  buttonLeft.style.visibility = "visible";
+  buttonRight.style.visibility = "visible";
 };
