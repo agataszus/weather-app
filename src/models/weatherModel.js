@@ -1,5 +1,5 @@
 export const state = {
-  coords: {},
+  coords: { latitude: 18.5, longitude: -69.9 },
   city: "",
   weather: {},
   error: null, // or null
@@ -16,6 +16,8 @@ export const setWeather = (weather) => {
 export const setCity = (city) => {
   state.city = city;
 };
+
+export const getCoords = () => state.coords;
 
 export const setCoords = (coords) => {
   state.coords = coords;
