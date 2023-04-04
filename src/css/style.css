@@ -194,11 +194,13 @@ body {
 
   .logo-container {
     justify-content: flex-start;
-    width: 14rem;
+    margin-right: auto;
+    padding-left: 2.4rem;
+    width: unset;
   }
 
-  .search-container {
-    width: 22rem;
+  .search-controller-container {
+    justify-self: end;
   }
 
   .main-container {
