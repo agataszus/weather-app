@@ -10,6 +10,10 @@
   opacity: 50%;
 }
 
+.searchContainer:focus-within {
+  opacity: 90%;
+}
+
 .searchInput {
   outline: none;
   border: none;
@@ -24,4 +28,19 @@
 .searchInput::placeholder {
   font-family: inherit;
   color: rgba(255, 255, 255, 0.87);
+}
+
+/**********************************/
+/* BELOW 544px (Mobile phones) */
+/**********************************/
+
+@media (max-width: 34em) {
+  .searchContainer {
+    display: none;
+    position: absolute;
+    width: 22rem;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0);
+  }
 }

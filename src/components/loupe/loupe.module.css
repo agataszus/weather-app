@@ -1,0 +1,21 @@
+.loupe {
+  display: none;
+}
+
+.loupeIcon {
+  height: 3.2rem;
+  width: auto;
+}
+
+/**********************************/
+/* BELOW 544px (Mobile phones) */
+/**********************************/
+
+@media (max-width: 34em) {
+  .loupe {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 1.6rem;
+  }
+}

@@ -10,6 +10,14 @@ class LogoView {
     const container = createLogoComponent();
     this._getParentElement().insertAdjacentElement("afterbegin", container);
   }
+
+  hide() {
+    this._getParentElement().style.opacity = "0";
+  }
+
+  show() {
+    this._getParentElement().style.opacity = "100%";
+  }
 }
 
 export default new LogoView();
