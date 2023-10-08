@@ -27,3 +27,4 @@ const init = async function () {
   SearchIconView.handle(controlLoupe);
 };
 init();
+
