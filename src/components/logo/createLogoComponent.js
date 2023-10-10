@@ -1,5 +1,5 @@
 import styles from "./logo.module.css";
-import logoSrc from "../../assets/logo.svg";
+import logoSrc from "../../assets/logo.png";
 
 export const createLogoComponent = () => {
   const logo = document.createElement("img");
@@ -8,3 +8,4 @@ export const createLogoComponent = () => {
 
   return logo;
 };
+
